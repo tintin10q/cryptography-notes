@@ -6,7 +6,7 @@ date: \today
 
 # Description 
 
-Exaustive key search is an attack that you can always try on any security thing involving keys that is not [otp encryptino](otp.md). The attack is the most basic attack.
+Exaustive key search is an attack that you can always try on any security thing involving keys that is not [otp encryption](otp.md). The attack is the most basic attack.
 
 # Steps 
 
