@@ -1,0 +1,27 @@
+{
+  "spellcheck": true,
+  "vimMode": true,
+  "spellcheckDictionary": [
+    "Nijmegen",
+    "ncat",
+    "ncat",
+    "Modularity",
+    "cryptanalysis",
+    "Rijndael",
+    "bitwise",
+    "plaintext",
+    "decrypt",
+    "invertible",
+    "cryptographi",
+    "cryptographic",
+    "Quinten",
+    "Cabo",
+    "diversifier",
+    "diversifiers",
+    "keystream",
+    "pseudorandom",
+    "distinguisher",
+    "cryptanalists"
+  ],
+  "alwaysUpdateLinks": true
+}

@@ -1,0 +1,7 @@
+a.internal-link.is-unresolved{
+  color: var(--unresolved-link-color);
+}
+
+.graph-view.color-fill-unresolved{
+  color: var(--unresolved-link-color);
+}

@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "d0ddd56fdb93121d",
+    "type": "split",
+    "children": [
+      {
+        "id": "656e527c3b0873fd",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "349ae254db918e14",
+    "type": "split",
+    "children": [
+      {
+        "id": "ceb8911e04d45c90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4378b320f3eaf798",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "454b4ac7b46a5d09",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "32fdb12852a3e927",
+    "type": "split",
+    "children": [
+      {
+        "id": "e9a40735b7db4333",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb6ba25da42ae86b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "656e527c3b0873fd",
+  "lastOpenFiles": [
+    "LN_I2C_AugustJe wildeze.pdf",
+    "claim.md",
+    "advantage.md",
+    "adversary.md",
+    "letters.md",
+    "block.md",
+    "block.jpeg",
+    "afine.png",
+    "aes.md",
+    "aes.md.pdf"
+  ]
+}
