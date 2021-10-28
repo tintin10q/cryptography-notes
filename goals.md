@@ -1,6 +1,5 @@
 ---
 title: Goals of Crytpography 
-oals
 author: Quinten Cabo s1027427
 date: \today
 ---
