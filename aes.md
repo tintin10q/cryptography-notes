@@ -110,13 +110,15 @@ So how do we get the round key? The key schedule consists of two components: the
 The expanded key is a rectangular array with four rows of elements in $F_{2^8}$ . The key expansion function depends on the key length: there is a version for keys up to 224 bits and a version for keys longer than 224 bits. In both versions of the key expansion, the first $N_k$ columns of the expanded key are filled with the cipher key. The following columns are computed recursively in terms of previously defined columns. The recursion uses the elements of the previous column, the bytes of the column $N_k$ positions earlier, and round constants $RC[j]$ . The round constants are independent of $N_k$ and defined by $RC[j] = x j−1$ . The recursive key expansion allows on-the-fly computation of round keys on memory-constrained platforms.
 
 
+AES is used millions of times per day, worldwide. 
+
 # The wide trail strategy
 In the context of Rijndael the wide tail strategy means that after four rounds, there are no differential trails with expected differential probability (EDP) above $2^{−150}$ and that there are no linear trails with correlation amplitude above $2^{−75}$ . These claims have proofs. You can see the proof for differential trails in the lecture notes section 3.7.5. The explanation for linear trails is similar, but not the same. 
 
 # Security 
 Since its submission to the AES competition in 1998, Rijndael has been cryptanalyzed by the cryptographic community and especially after it won the NIST competition, many academic papers have been published about the AES subset of Rijndael. Despite over 20 years of cryptanalysis, no exploitable weaknesses of AES have been shown. 
 
-There have been the so-called biclique attacks published in 2011. These are meet in the middle attacks which use a lot of sophisticated techniques to speed up exhaustive key search by a factor of 4 by not having to do a full cipher execution per key guess. This is a break of the cipher but it a theoretical attack.
+There have been the so-called biclique attacks published in 2011 by Bogdanov et. al,. These are meet in the middle attacks which use a lot of sophisticated techniques to speed up exhaustive key search by a factor of 4 by not having to do a full cipher execution per key guess. This is a break of the cipher but it a theoretical attack.
 
 ## Cache attacks
 A reason that Rijmdael won the AES competition was that it was versatile to implement. One component of that was a T-table idea that allows to execute the `round` function with one table lookup and 32 bit XOR instruction. 
@@ -125,17 +127,14 @@ One thing the creators of AES did not think about was the cache of cpu. A few ye
 
 One initiative to fix this problem was that of Peter Schwabe and Emilia Käsper to write efficient AES code that does not use table-lookups by using the technique of `bit- slicing`. The other was the initiative of Intel to have dedicated AES instructions on their CPU's.        
 
+## Security strength
+So what is the upper security strength bound of AES? More formal what is the upper bound on $Adv^{prp}_{AES} \leq \frac{|Q_c|}{2^{k}}$ that holds for any possible adversary $A$ .   
 
+There is actually one Adversary whose advantage matches this bound this is the one that performs an exhaustive key search with $|Q_c|$ .
 
+So far this claim has been broken but not in a practical way. The biclique attacks only lower the upper bound by a bit and the cache timing attacks also have solutions. It still takes nearly $|Q|$ is still nearly $2^k$ and thus practical attacks are non existent at this moment. 
 
-
-
-
-
-
-
-
-
+This means that AES can be used to build other crypto graphic schemes!
 
 
 

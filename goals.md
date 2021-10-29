@@ -24,3 +24,4 @@ the original source of received data
 she/he/it claims to be
 I Non-repudiation: the assurance that a person cannot deny a
 previous commitment or action
+

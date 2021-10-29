@@ -44,4 +44,6 @@ Claim 4.5.2. Let SC be a stream cipher with key size k. For any adversary A with
 $Adv^{prf}_{SC} \leq \frac{|Q_c|}{2^k}$ \
 
 ## Breaking claims
-Claims like these can't be proven but you can break them. This happens with attacks.
+Claims like these can't be proven but you can break them. This happens with attacks.  An attack is when someone finds a way to distinguish the stream cipher from a random oracle with a better claimed bound then was made in the claim. 
+
+> **For example** a team of researchers find an attack on $SC$ . They show that $SC_K$ can be distinguished from a random oracle $RO$ with probability 1 using computational complexity $2^k/2$ . Formally, this means that this team of researchers have described an adversary $A'$ with computational complexity $|Q_c| = 2^{k/2}$ (so that is in half of the queries) such that $Adv^{prf}_SC(A') = 1$ . This is better than the claimed bound and thus considered to be a valid attack on the scheme. 

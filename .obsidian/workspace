@@ -1,14 +1,17 @@
 {
   "main": {
-    "id": "d0ddd56fdb93121d",
+    "id": "d4523c6a35f63471",
     "type": "split",
     "children": [
       {
-        "id": "656e527c3b0873fd",
+        "id": "1dce8e8a7c41314a",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "goals.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -49,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "32fdb12852a3e927",
@@ -65,12 +69,13 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "goals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
+                "showSearch": true,
+                "searchQuery": "hi",
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -82,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "656e527c3b0873fd",
+  "active": "1dce8e8a7c41314a",
   "lastOpenFiles": [
-    "LN_I2C_AugustJe wildeze.pdf",
-    "claim.md",
-    "advantage.md",
-    "adversary.md",
-    "letters.md",
+    "goals.md",
+    "lfsr.jpeg",
     "block.md",
-    "block.jpeg",
-    "afine.png",
-    "aes.md",
-    "aes.md.pdf"
+    "advantage.md",
+    "kerckhoff.md",
+    "adversary.md",
+    "kerchhoff.md",
+    "cryptographichash.md",
+    "cryptographichash.md.pdf",
+    "ctr.png"
   ]
 }

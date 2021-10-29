@@ -21,7 +21,16 @@
     "keystream",
     "pseudorandom",
     "distinguisher",
-    "cryptanalists"
+    "cryptanalists",
+    "bijectively",
+    "decrypted",
+    "injective",
+    "encryptions",
+    "decryptions",
+    "randomizer",
+    "ciphertext",
+    "indistinguishability",
+    "unforgeability"
   ],
   "alwaysUpdateLinks": true
 }

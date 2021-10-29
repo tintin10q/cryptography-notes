@@ -19,7 +19,7 @@ A list of the influential people in the cryptographic world.
 - Vigenére -> Suggested an improvement to the cipher that became the Vigenére cipher.
 - Claude Shannon -> An influential American mathematician, electrical engineer, and cryptographer known as "the father of information theory.
 - Kerckhoff -> The man that came up with the [kerckhoff principle](kerckhoff.md)
-
+- Bogdanov et. all -> Publisher of the biclique attack on [[AES]].
 # Groups 
 - IBM -> Worked on the [DES](des.md) cipher.
 - NIST
