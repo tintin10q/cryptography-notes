@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "1dce8e8a7c41314a",
+        "id": "a0113496ed66056a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "goals.md",
+            "file": "letters.md",
             "mode": "source"
           }
         }
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "32fdb12852a3e927",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "goals.md",
+                "file": "letters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -79,25 +78,34 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "7d96558f0be364ca",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "1dce8e8a7c41314a",
+  "active": "a0113496ed66056a",
   "lastOpenFiles": [
-    "goals.md",
-    "lfsr.jpeg",
+    "letters.md",
+    "lfsr.md",
+    "randomoracle.md",
+    "xof.md",
+    "blockmodes.md",
+    "authentication.md",
+    "bdaybound.md",
     "block.md",
-    "advantage.md",
-    "kerckhoff.md",
-    "adversary.md",
-    "kerchhoff.md",
-    "cryptographichash.md",
-    "cryptographichash.md.pdf",
-    "ctr.png"
+    "des.md",
+    "hash.md"
   ]
 }

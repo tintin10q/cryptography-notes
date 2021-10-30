@@ -30,7 +30,18 @@
     "randomizer",
     "ciphertext",
     "indistinguishability",
-    "unforgeability"
+    "unforgeability",
+    "iteratively",
+    "preimage",
+    "preimages",
+    "Merkle",
+    "Damgård"
   ],
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }

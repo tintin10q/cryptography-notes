@@ -4,7 +4,7 @@ author: Quinten Cabo s1027427
 date: \today
 ---
 
-This file keeps track of all the letters and shorthands in Cryptography. Hopefully they are consistent we will see.
+This file keeps track of all the letters and shorthands in Cryptography. Hopefully they are consistent we will see. Seems like it is! At least till the midterm.
 
 
 # Letters for Things
@@ -27,7 +27,6 @@ This file keeps track of all the letters and shorthands in Cryptography. Hopeful
 - $|Q_f|$ the number of forgery attempts 
 - A -> An adversary.
 - IV -> A (random) initial value. This is used for the first block in [CBC mode](blockmodes.md)
-- h -> A hash function. 
 - H -> A digest of a hash function. Like so: $H = h_m$ . 
 - L -> A dummy key
 - T -> Is a tag of a message. This is like the signature that was made with a MAC a key and a message M. 
@@ -40,6 +39,9 @@ This file keeps track of all the letters and shorthands in Cryptography. Hopeful
 - WB -> Wide Block Cipher
 - B  -> [Block Cipher](block.md) 
 - LFSR -> [Linear Feedback Shift Register](lfsr.md) a type of stream cipher that is linear.
+- h -> A [hash](hash.md) function. 
+- F -> A compression function. 
+
 
 
 # People

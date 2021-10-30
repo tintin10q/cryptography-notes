@@ -1,8 +1,8 @@
 [
-  "table-editor-obsidian",
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-emoji-toolbar",
   "obsidian-git",
   "pdf-to-markdown-plugin",
-  "sliding-panes-obsidian"
+  "sliding-panes-obsidian",
+  "table-editor-obsidian"
 ]

@@ -8,9 +8,11 @@ date: za 30 okt 2021
 
  A hash function h is a primitive that takes as input an arbitrary-length string and returns an n-bit digest H (also known as the hash result or sometimes just even hash), with n some fixed length: $h(M) = H$ .       
  
- ![[hashf.png]]
+ ![hash function](hashf.png)
  
 In programming there are many use cases for hash functions. In most of these use cases, one hopes that the digest for different inputs look unrelated.
+
+Examples of cryptographic hash functions include: [Hash implementations](hashimplementations.md)
 
 # Requirements 
 These are the classic security requirements for hash functions.
@@ -44,3 +46,52 @@ For a random oracle, the success probability of finding a pre-image after $|Q_c|
 
 ## Keyed hashing
 You can build [MAC](mac.md) and [Stream ciphers](stream.md) from hash functions. 
+
+# Security of hash functions
+Inspired by Chapter 4, one might be tempted to model hash function security by bounding the
+advantage of an adversary A in distinguishing h from a random oracle RO:
+
+$Adv^{ind}_h(A) = ∆_A(h ; RO)$ .
+
+This does not work. The reason for this is that in one of the two oracles in, no randomness is involved. This is caused by that there is no key. 
+
+More detailed, adversary A has access to either the hash function h (a mathematical function with a specification), or a random oracle (which is an abstract object without a specification). What this concretely means is that A can evaluate h offline on its own computer (because of the [kerckhoff principle](kerckhoff.md), and it can check if the outcomes match the responses from the oracle. If this is the case, it is conversing with h; if not, it is conversing with RO. So lesson one is that we must have to find some way to incorporate randomness in the “real world”. 
+
+One way to do so is to consider an abstracted version of the hash function, where a certain atomic building block is idealized. This way, h is viewed as a mode M that operates on top of a primitive F. For example, M is the Merkle-Damgård construction and F is a compression function, or M is a sponge construction and F is a permutation. 
+Then, the atomic building block F is idealized. This means that it is viewed as a random primitive. It results in the distinguishing game of Figure 8.13.
+
+![Distinguishing a hash mode from a random oracle](8.13.png)
+
+By idealizing the primitive of a hash function we can not actually prove the security of a hash function. The only thing we can achieve is proving that an idealized version of it, with the underlying primitive being idealized, is a secure hash function.
+
+However A is and should be able to query F. Because of kerckhoff. By symmetrical reasons, this means that the adversary must also be able to query F in the ideal world. 
+
+This leads to defining hash function security by bounding the advantage of an adversary A in distinguishing a hashing mode M based on ideal primitive F from a random oracle RO 
+
+$Adv^{ind}_M (A) = ∆_A(M, F ; RO, F)$ .
+
+It looks like this:
+
+![[8.14.png]]
+
+Unfortunately, this model does not work either. Any mode M can be distinguished from RO in only a few queries. The adversary queries the mode M with some chosen message M , and then simulates the mode by making calls to F as described by the mode. In the real world, the outcomes will match; in the ideal world, they will very likely not match.       
+
+This problem did not happen with stream ciphers and block ciphers because there there is a secret key that the A just doesn't have. 
+
+## Differentiating advantage
+So how do we fix this?
+
+The model we are after at is that of “differentiating adversaries” of Maurer et al. This model replaces the function F in the ideal world by a simulator S. See also Figure 8.15. 
+
+![Differentiating a hash mode from a random oracle.](8.15.png)
+
+This simulator gets access to the random oracle RO, and its goal is to give outputs that are consistent with the random oracle. Indeed, in the real world (M, F) there is some relation among the queries and the adversary may actually “recompute” outcomes from oracle M with its oracle F. **The goal of the simulator is that if the adversary would “recompute” outcomes from RO, these actually match with the outcomes of S.**
+
+It is yet unclear how such a simulator actually looks like. The answer is, that it is specific to the
+mode: one develops a simulator S such that, hopefully, outcomes of (M, F) are hard to distinguish
+from (RO, S). Security bounds can then be proven for a given simulator S.
+
+We end up with the following definition of differentiating advantage:
+Let M be a hashing mode based on random primitive F. Let RO be a random oracle and S be a simulator. The advantage of an adversary A in differentiating (M, F) from a (RO, S) is defined as 
+
+$Adv^{} iff}_M(A) = ∆_A(M, F ; RO, S)$ . 
