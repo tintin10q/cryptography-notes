@@ -1,0 +1,1 @@
+Lecture 13 was really hard to follow.

@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "14888efed274e422",
+        "id": "90650dc88e742da2",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "symetric crypto/block.md",
+            "file": "feedback.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "symetric crypto/block.md",
+                "file": "feedback.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,19 +93,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "14888efed274e422",
+  "active": "90650dc88e742da2",
   "lastOpenFiles": [
-    "symetric crypto/block.md",
-    "symetric crypto/aes.md",
-    "symetric crypto/ae.md",
-    "symetric crypto/adversary.md",
-    "Untitled.md",
-    "symetric crypto/advantage.md",
-    "symetric crypto/letters.md",
-    "symetric crypto/stream.md",
-    "symetric crypto/lfsr.md",
-    "symetric crypto/otp.md"
+    "feedback.md",
+    "asymetric crypto/rsa.md",
+    "asymetric crypto/rings.md",
+    "asymetric crypto/exponent rules.md",
+    "asymetric crypto/fields.md",
+    "asymetric crypto/mathsymbols.md",
+    "asymetric crypto/mercle diffee helman.md",
+    "asymetric crypto/keys establishment.md",
+    "asymetric crypto/Key problem.md",
+    "asymetric crypto/groups.md"
   ]
 }
